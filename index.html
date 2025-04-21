@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHO Homepage LAyout</title>
+    <style>
+        *{
+            box-Sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 40px;
+        }
+        nav {
+            background-color: skyblue;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https: //picsum .photos/seed/hero/ 1200/400');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            position: relative;
+        }
+        .hero h1 {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            color: white;
+            background-color: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+        }
+        .contennt {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        .card {
+            background-color: wheat;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.who.int/ResourcePAckges/Who/assets/dist/images/logos/en/h-logo-white.svg" alt="WHO Logo">
+        <div>World Health Organization</div>
+    </header>
+    <nav>
+        <a href="#">Health Topics</a>
+        <a href="#">Countries</a>
+        <a href="#">Newsroom</a>
+        <a href="#">Emergencies</a>
+        <a href="#">About WHO</a>
+    </nav>
+
+    <section class="hero"> 
+        <h1>Working for better health for everyone, everwhere</h1>
+    </section>
+
+    <section class=""content>
+        <div class=""card>
+            <img src="https://picsum.photos/seed/1/400/250" alt="">
+            <h2>Latest Updates</h2>
+            <p>Stay inpormed with news and resources.</p>
+        </div>
+        <div class="card">
+        <img src="https://picsum.photos/seed/2/400/250" alt="">
+        <h2>Global Health Data</h2>
+        <p>Access global reports and statistics,</p>
+        </div>
+        <div class="card">
+        <img src="https://picsum.photos/seed/3/400/250" alt="">
+        <h2>Emergency Response</h2>
+        <p>Access global reports and statistics,</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 World Health Organization (WHO). All right reserved.</p>
+    </footer>
+</body>
+</html>
